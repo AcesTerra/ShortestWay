@@ -56,7 +56,7 @@ public class DibujarLaberinto extends Application {
     public void start(Stage primaryStage) throws IOException {
         ClassLoader loader = DibujarLaberinto.class.getClassLoader();
         System.out.println(loader.getResource("recorrido_de_arboles/Recorrido_de_arboles.class"));
-        String filename = "C:\\Users\\achiv\\Documents\\NetBeansProjects\\CaminoCorto\\build\\classes\\caminocorto\\texto.txt";
+        String filename = "C:\\Users\\achiv\\Documents\\NetBeansProjects\\Recorrido_de_arboles\\build\\classes\\recorrido_de_arboles\\texto.txt";
         List<String> laberinto = new ArrayList();
         BufferedReader br = Files.newBufferedReader(Paths.get(filename));
         laberinto = br.lines().collect(Collectors.toList());
